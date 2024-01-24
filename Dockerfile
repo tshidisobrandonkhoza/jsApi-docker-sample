@@ -1,6 +1,8 @@
 FROM node:21-alpine
 
-WORKDIR /jsAPI-Sample
+RUN npm install -g nodemon
+
+WORKDIR /jsapi_sample
 
 COPY package.json .
 
@@ -10,4 +12,4 @@ COPY . .
 
 EXPOSE 4000
 
-CMD [ "npm", "start" ]
+CMD [ "npm", "run", "dev"]

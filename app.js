@@ -16,6 +16,10 @@ app.get('/', (req, res) => {
     {
         "id": "3",
         "title": "Show Review"
+    },
+    {
+        "id": "4",
+        "title": "Bible Review"
     }];
     res.json(data);
 });
